@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/06b4efea42.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/styleevent.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+				aside{
+					display: none;
+
+				}
+				@media only screen and (min-width: 850px){
+					aside{
+						display: block;
+					}
+
+				}
+				@media only screen and (max-width: 850px){
+					.eventcard{
+						margin-left: 0px;
+
+					}
+					.eventcardimage{
+						margin-left: 0px;
+					}
+				}
+			</style>
+</head>
+<body>
+	<header >
+		<nav class=" navbar navbar-expand-lg navbar-light navbar-fixed" >
+			<a class="navbar-brand" style="	padding: 0 20px 0 4%; " href="#">COMPNAME</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 4%">
+
+				<span class="navbar-toggler-icon" ></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link " href="#">Events </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Create</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sign Up</a>
+					</li>
+					<li class="nav-item" >
+						<a class="nav-link cur-nav" href="#"  >My Profile <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<main style="position: relative;" class="eventheader">
+
+		<h1 class= "headingevent">Events Listing</h1>
+		<h3 class= "subheadingevent">Have a look at upcoming events.</h3>
+	</main>
+	<section class="row eventlistmain">
+		<aside class="sortingsec col col-md-3 col-sm-0">
+			
+			<div class= "eventsorter">
+				<h5 style="margin-bottom: 20px;">Categories</h5>
+				<form>
+					<input type="search" name="" class= "categorysearch"><br>
+					<br>
+					<div class= "checkboxform">
+					<div class="form-check ">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Catergory 1</label>
+					</div>
+					<div class="form-check ">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Catergory 1</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Catergory 1</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Catergory 1</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Catergory 1</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Catergory 1</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Catergory 1</label>
+					</div>
+				</div>
+				<h5 style="margin-bottom: 20px;">Timings</h5>
+				<div class="input-div pass">
+				
+				<div class="div">
+
+					<label style="margin-bottom: 0px">Date</label><br>
+					<input type="date" class="input date">
+
+				</div>
+			</div>
+			<div class="input-div pass">
+				<div class="div">
+
+					<label style="margin-bottom: 0px">Time</label><br>
+					<input type="time" class="input times">
+
+				</div>
+			</div>
+			</form>
+		</div>
+	</aside>
+
+	<section class= "eventcardsec col col-xs-12 col-lg-8">
+		<div class="eventcard">
+			<div class="eventcardimage col-12 col-lg-6">
+				<img style="object-fit: cover;" src="images/Photo.png">
+				<div><p class="eventimagecategory">Photography</p></div>
+				
+			</div>
+			<div class="eventcardtext col-12 col-lg-6">
+				<img src="images/location.svg" alt="location"></i><span class= "eventcardlocation">MIT ADT University, Loni</span>
+				<h3 class="eventcardheading"> Artopher Photography</h3>
+				<p class="eventcardextract">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+				</p>
+				<button class="eventregister">Register</button>
+			</div>
+		</div>
+
+	</section>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!----------------- FOOTER ----------------------->
+
+<footer class="page-footer font-small blue pt-4" style="box-shadow: 0 -2px 12px rgba(0,0,0,0.2);">
+	<div class="container-fluid text-center text-md-left"  >
+		<!-- Grid row -->
+		<div class="row ">
+			<!-- Grid column -->
+			<hr class="clearfix w-100 d-md-none pb-3">
+
+			<div class="col-md-2 mb-md-0 mb-3 footeredit" style="line-height: 40px; ">
+				<!-- Links -->
+				<h5 style="font-weight: 1000;">Catergories</h5>
+				<ul class="list-unstyled">
+					<li>
+						<a href="#!" class= "footerlinks">Programming</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Media & Photography</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Graphic Design</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Video & Animation</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Music & Audio</a>
+					</li>
+					<li>
+						<a href="#!"  class= "footerlinks">Film</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-2 mb-md-0 mb-3 footeredit" style="line-height: 40px; ">
+				<!----Links----->
+				<h5 style="font-weight: 1000;">Support</h5>
+				<ul class="list-unstyled">
+					<li>
+						<a href="#!"  class= "footerlinks">Contact Us</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">FAQs</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Help</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Join as Creator</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-2 mb-md-0 mb-3 footeredit" style="line-height: 40px; ">
+				<!-- Links -->
+				<h5 style="font-weight: 1000;">Community</h5>
+				<ul class="list-unstyled">
+					<li>
+						<a href="#!" class= "footerlinks">Form</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Invite a friend</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">Blogs</a>
+					</li>
+					<li>
+						<a href="#!" class= "footerlinks">How to become Creator</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 mt-md-0 mt-3" style="background: #ffbb33; padding: 180px 50px; line-height: 40px; letter-spacing: 1px;">
+				<!-- Content -->
+				<div style="float: left; margin-right: 20px;">
+					<p><b>Contact:</b>  +91 123456789</p>
+					<p><b>Email:</b>  contact@ourcompany.com </p>
+				</div>
+				<div class="vl" id="verticalline">
+					<ul>
+						<li>
+							<p> @company</p>
+						</li>
+						<li>
+							<p> @company</p>
+						</li>
+						<li>
+							<p> @company</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3 " style="margin:10px 0;">© 2020 Copyright:
+		<a href=""> ourwebiste.com.</a> All rights reserved.
+	</div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
