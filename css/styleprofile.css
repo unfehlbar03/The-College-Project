@@ -82,7 +82,7 @@ nav ul a:hover{
 
 
 .rightprofile{
-	background: url('/Web-Untitled-Project/images/Profile.png')no-repeat scroll center;/*profile photobackground*/
+	background: url('/The-College-Project/images/Profile.png')no-repeat scroll center;/*profile photobackground*/
 	background-size: cover;
 	height:63vh;/*height of profile photo bg*/
 	z-index: 10;
