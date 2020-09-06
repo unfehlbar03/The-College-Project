@@ -1,0 +1,349 @@
+*{
+	overflow-x: hidden;
+	font-family: "Roboto", "Trebuchet MS";
+	margin: 0;
+	padding: 0;
+	color: #505050;
+	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/*-------------------------NAVIGATION BAR-----------------------------*/
+
+header{
+	position: relative;
+	z-index: 20;
+	-moz-box-shadow:    0px 0px 10px 0px #898989;
+  	-webkit-box-shadow: 0px 0px 10px 0px #898989;
+  	box-shadow:         0px 0px 10px 0px #898989;
+}
+nav{
+	background: #fff; 
+	font-weight: bold;
+	z-index: 99;
+}
+nav ul{
+	margin-right: 4%;
+}
+.nav-item{
+	font-weight: lighter;
+	font-size: 14px;
+}
+nav ul a{
+	font-weight: lighter;
+	padding-right: 40px!important;
+	color: #000!important;
+	font-size: 120%;
+}
+.cur-nav{
+	color: #fc4a1a!important;
+	font-weight: bold;
+}
+nav ul a:hover{
+	color: #fc4a1a!important; 
+}
+@media only screen and (min-width: 992px){
+	nav{
+		height: 75px;
+	}
+}
+
+.pagebody{
+	background: #f9f9f9;
+	padding: 3%;
+}
+.profile{
+	height: 100%;
+	background: #f9f9f9;
+	z-index: 10;
+	padding-bottom: 80px;
+
+}
+
+.leftprofile{
+	padding: 7%;
+	padding-top: 15%; 
+
+}
+
+.leftprofile button{
+	padding: 12px 45px;
+	border-radius: 40px; 
+	font-size: 17px;
+	font-weight: 600;
+	color: #888;
+	margin: 20px 0;
+	background: #f9f9f9;
+	/*filter: drop-shadow( 6px 8px 4px rgba(0,0,0,0.161));*/
+	border: 2px solid #777;
+}
+
+
+.rightprofile{
+	background: url('C:/Users/Aditya/Documents/GitHub/Web-Untitled-Project/images/Profile.png')no-repeat scroll center;/*profile photobackground*/
+	background-size: cover;
+	height:63vh;/*height of profile photo bg*/
+	z-index: 10;
+	position: relative;
+
+}
+
+@media only screen and (min-width:678px){
+	.rightprofile{
+		height: 93vh ;
+	}
+}
+.skillcarddiv{
+	text-align: center;
+	align-items: center;
+}
+ .skillcards{
+ 	margin: 20px 20px auto; width: 200px;filter:drop-shadow( 12px 9px 10px rgba(0,0,0,0.15));
+
+ }
+ .skillcards:hover{
+ 	margin: 20px 20px auto; width: 200px;filter:drop-shadow( 12px 9px 10px rgba(0,0,0,0.05));
+}
+
+
+@media only screen and (max-width:768px){
+	.details{
+		text-align: center;
+	}
+
+}
+
+/*-------------------------Skills vertical line styling-----------------------------------*/
+
+
+.timeline {
+    list-style: none;
+    padding: 20px 0;
+    position: relative;
+}
+
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 2px;
+        background-color: #4ABDAC;
+        margin-top:40px;
+        margin-bottom: 140px;
+        }
+
+    .timeline > li {
+        margin-bottom: 12%;
+        margin-left: 50px;
+        position: relative;
+
+    }
+        /*.timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+*/
+        .timeline > li > .timeline-panel {
+        	 padding: 20px;
+            position: relative;
+        }
+        .timeline > li > .timeline-badge {
+            position: absolute;            
+           z-index: 1000;            
+        }
+
+        .timeline > li.timeline-inverted > .timeline-panel {
+            float: right;
+        }
+.timeline-body > p + p {
+        margin-top: 5px;
+    }
+    ul.timeline{
+    	left:-70px;
+
+    }
+
+    ul.timeline:before {
+        left: 90px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(95%);
+        width: -moz-calc(95%);
+        width: -webkit-calc(95%);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 11px;
+        margin-left: 0px;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+        padding-left: 100px;
+    }
+
+.timeline{
+	margin: 30px 7% 30px 7%;
+}
+.timeline-title{
+	text-transform: uppercase;
+	font-weight: 1000;
+	letter-spacing: 1px;
+
+}
+.timeline-body{
+	font-size: 19px;
+	font-weight: 500;
+	padding-top: 10px;
+}
+.text-muted{
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 670px){
+	
+	ul.timeline{
+    	left:-100px;
+
+    }
+    .timeline-panel{
+    	width :98%;
+    }
+    .timeline{
+    	margin:30px -24% 30px 7%;
+    }
+
+}
+
+/*------------------------------PORTFOLIO-------------------------------------*/
+
+
+.cardget1{
+	margin: 50px 2% 30px 12%; background: #fefefe; border-radius: 10px; width:36%; filter: drop-shadow( 4px 6px 6px rgba(0,0,0,0.1)); align-items: center;
+}
+
+.cardget2{
+	margin: 50px 12% 30px 2%; background: #fefefe; border-radius: 10px; width:36%;filter: drop-shadow( 4px 6px 6px rgba(0,0,0,0.1));align-content: center;
+}
+
+@media only screen and (max-width: 968px){
+	.cardget{
+		padding: 40px 25px;
+	}
+}
+
+.cardget:hover{
+	/*border: 1px solid ;*/
+	filter: drop-shadow( 4px 8px 12px rgba(0,0,0,0.161));
+}
+
+@media only screen and (max-width: 660px){
+	.roggg{
+		display: block;
+	}
+	.cardget1{
+		margin: 50px 35px;
+		width:auto;
+	}
+	.cardget2{
+		margin:50px 35px;
+		width:auto;
+	}
+}
+.portfolioimg{
+	
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+/*----------------------FOOTER FOR PROFILE PAGE-----------------------------*/
+
+.footerprofile{
+	text-align: center;
+	margin-top: 6%;
+	z-index: 1;
+}
+
+.footercontact{
+	
+	font-weight: 800; margin-bottom: 60px; 
+}
+
+.contactunderline{
+	text-decoration: underline;
+	text-decoration-color:  #ffbb33;
+}
+.vlprofile:before{
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 2px;
+        background-color: #999;
+        margin-top:30px;
+        margin-bottom: 105px;
+        margin-left: -20%;
+
+
+}
+@media only screen and (max-width: 1300px){
+	.vlprofile:before{
+		margin-left: 40%;
+	}
+
+}
+@media only screen and (max-width: 520px;){
+	.socialmediaicon{
+		display: none;
+		visibility: hidden;
+	}
+	.footerbutton{
+		padding-bottom: -200px; 
+		z-index: 100;
+	}
+
+}
+
+
+.footerbutton button{
+	padding: 16px 45px;
+	border-radius: 40px; 
+	font-size: 17px;
+	font-weight: 600;
+	color: #444;
+	margin: 30px 0;
+	background: #ffbb33;
+	filter: drop-shadow( 6px 8px 4px rgba(0,0,0,0.161));
+	border: 0px;
+	
+}
+.footerbutton{
+
+	text-align: center;
+}
+
+/*----------------FOOTER-------------------*/
+.footerlinks{
+	text-decoration: none;
+	color: #505050;
+}
+
+@media only screen and (min-width: 600px){
+.footeredit{
+	margin-top: 5%;
+	padding-left: 5%;
+}
+}
+

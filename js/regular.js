@@ -1,0 +1,1 @@
+document.getElementById("myDiv").style.borderLeft = "thick solid #0000FF";

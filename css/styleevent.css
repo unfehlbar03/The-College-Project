@@ -1,0 +1,270 @@
+*{
+	overflow-x: hidden;
+	font-family: "Roboto", "Trebuchet MS",'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #505050;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+header{
+	
+	-moz-box-shadow:    0px 0px 12px 0px #999;
+  	-webkit-box-shadow: 0px 0px 12px 0px #999;
+  	box-shadow:         0px 0px 12px 0px #999;
+}
+nav{
+	background: #fff; 
+	font-weight: bold;
+	z-index: 99;
+}
+.nav-item{
+	font-weight: lighter;
+	font-size: 14px;
+}
+nav ul a{
+	font-weight: lighter;
+	padding-right: 40px!important;
+	color: #000!important;
+	font-size: 120%;
+}
+.cur-nav{
+	color: #fc4a1a!important;
+	font-weight: bold;
+}
+nav ul a:hover{
+	color: #fc4a1a!important; 
+}
+@media only screen and (min-width: 992px){
+	nav{
+		height: 80px;
+	}
+}
+
+.eventlistmain{
+	background-color: #f7f7f7;
+}
+main{
+	background: url("../images/Event_listing_BG.png") ;
+	background-size: cover;
+	height: 80vh;
+}
+
+.headingevent{
+	color: #fff;
+	margin-top: 40vh;
+	margin-left: 7%;
+	font-weight: bolder;
+	font-size: 108px;
+	text-shadow: 1px 0;
+	letter-spacing: 3px;
+}
+
+.subheadingevent{
+	color: #fff;
+	margin-top: -2%;
+	margin-left: 7.37%;
+
+}
+
+@media only screen and (max-width: 600px){
+	.headingevent{
+		font-size:70px;
+	}
+}
+
+@media only screen and (min-width:1500px){
+	.subheadingevent{
+		margin-top:-0.7%;
+	}
+}
+
+
+.sortingsec{
+	margin-left: 5%;
+	margin-top: 74px;
+}
+
+.eventsorter{
+	padding-left:34px; 
+	padding-top:55px;
+	margin: 10%;
+	margin-top: 36px;
+	-moz-box-shadow:    0px 0px 12px 0px #ccc;
+  	-webkit-box-shadow: 0px 0px 12px 0px #ccc;
+  	box-shadow: 0px 0px 12px 0px #ccc;
+  	align-content: center;background-color: #fff;
+  	padding: auto;
+  	border-radius: 10px;
+}
+
+.categorysearch{
+	border-style: solid;
+	border-color:  #4ABDAC;
+	border-radius: 3px; 
+	outline:none;
+	width:150px;
+}
+@media only screen and (max-width: 1186px) and (min-width: 850px){
+	.categorysearch{
+	width:115px;
+}
+}
+.checkboxform{
+	background: #f8f8f8;
+	align-content: center;
+	margin-right:34px;
+	padding-left: 5px;
+	padding-top: 8px;
+	margin-bottom: 15px;
+}
+
+
+.input-div{
+	position: relative;
+    /*display: grid;*/
+    /*grid-template-columns: 7% 93%;*/
+    
+    padding: 0px 0px 5px 0px;
+    /*border-bottom: 2px solid #d9d9d9;*/
+}
+
+.input-div > div > input{
+  border-radius: 6px;
+  border: solid;
+  border-color: #4ABDAC;
+	/*outline: none;
+	background: none;*/
+	padding: 0.5rem 0.7rem;
+	color: #555;
+	font-family: roboto;
+	cursor: pointer;
+outline: none;
+}
+.pass{
+	
+}
+.pass > div > .date{
+	width: 160px;
+	float: left;
+
+}
+.pass > div> .times{
+	
+	width:100px;
+
+}
+
+@media only screen and (max-width: 1186px) and (min-width: 850px){
+	.eventsorter{
+		margin: 0%;
+		margin-top: 36px;
+	}
+}
+
+@media only screen (max-width: 851px){
+	.eventsorter{
+		display: none;
+	}
+}
+form{
+	padding-bottom: 30px;
+}
+.eventcardsec{
+
+	position: relative;
+	margin:auto;
+	padding:auto;
+	margin-top: 60px;
+}
+
+.eventcard{
+	margin: 50px auto;
+	margin-left: -10px;
+	padding: auto;
+	width:95%;
+	-moz-box-shadow:    7px 3px 3px 0px #eee;
+  	-webkit-box-shadow: 7px 3px 3px 0px #eee;
+  	box-shadow:         7px 3px 3px 0px #eee;
+  	z-index: 1000;
+  	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.161);
+	border-radius: 30px;
+	background-color: #fff;
+}
+.eventcard:hover{
+	transition: box-shadow 0.2s ease-in-out 0s;background-color: #fefefe;
+}
+.eventcardimage{
+	width: 100%;
+	height: 350px;
+	margin: auto;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin-left:-15px; 
+	margin-right: -15px;
+}
+.eventimagecategory{
+	position: absolute;
+  	top: 36px;
+  	left: 0px;
+  	background-color: #fff;
+  	color: #555;
+  	padding: 7px 20px ;
+  	padding-left: 35px;
+  	border-top-right-radius: 16px;
+  	border-bottom-right-radius:16px;
+  	font-size: 12px;
+}
+
+.eventcardtext{
+	padding-left: 27px;
+	padding-top: 34px;
+	padding-right: 27px;
+	margin:auto;
+}
+
+.eventcardlocation{
+	padding-left: 10px;vertical-align: 0px;font-size:12px;font-weight: lighter;
+}
+
+.eventcardheading{
+	margin: 15px 0;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.eventcardextract{
+	font-size:12px;
+	margin-bottom: 19px;
+}
+
+.eventregister{
+	padding: 3px 19px;
+	border: 1px solid #999;
+	background: #efefef;
+	border-radius: 19px;
+	color: #4ABDAC;
+}
+
+.footerlinks{
+	text-decoration: none;
+	color: #505050;
+}
+
+@media only screen and (min-width: 600px){
+.footeredit{
+	margin-top: 5%;
+	padding-left: 5%;
+}
+}
+
+.vl {
+  border-left: 6px bold #505050;
+  padding-left: 50px;
+  margin-top: -35px;
+ 
+}
