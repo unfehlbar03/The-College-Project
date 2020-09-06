@@ -1,6 +1,6 @@
 *{
 	overflow-x: hidden;
-	font-family: "Roboto", "Trebuchet MS";
+	font-family: "Roboto",serif, "Trebuchet MS";
 	margin: 0;
 	padding: 0;
 	color: #505050;
@@ -82,7 +82,7 @@ nav ul a:hover{
 
 
 .rightprofile{
-	background: url('C:/Users/Aditya/Documents/GitHub/Web-Untitled-Project/images/Profile.png')no-repeat scroll center;/*profile photobackground*/
+	background: url('/Web-Untitled-Project/images/Profile.png')no-repeat scroll center;/*profile photobackground*/
 	background-size: cover;
 	height:63vh;/*height of profile photo bg*/
 	z-index: 10;

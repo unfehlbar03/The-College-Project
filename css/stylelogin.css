@@ -61,7 +61,16 @@ nav{
 	text-align: center;
 	margin-left: 5%;
 }
-
+@media only screen and (max-width:410px){
+	.login-content{
+		margin-left:4%;
+	}
+	.container1{
+		width:94%;
+		margin:0px 3%;
+		padding:0px;
+	}
+}
 .img img{
 	width: 500px;
 }
