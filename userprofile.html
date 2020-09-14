@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/06b4efea42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/userprofile.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" type='text/css'> 
+    <script src="js/userprofile.js"></script>
+
+</head>
+
+<body onload="document.getElementById('details').reset();">
+    <header>
+        <nav class=" navbar navbar-expand-lg navbar-light navbar-fixed">
+            <a class="navbar-brand" style="	padding: 0 20px 0 60px; text-decoration: none; " href="#">COMPNAME</a>
+        </nav>
+    </header>
+
+
+
+
+    <div class="container-fluid">
+
+
+        <div class="row mb-5">
+            <div class="col-lg-4 col-md-4">
+                <img src="images/Profile_photo_place.png" id="profile">
+            </div>
+
+            <div class="col-lg-8 col-md-8" style="margin-top: 60px;">
+                <section class="form">
+                    <div class="personal" >PERSONAL DETAILS</div>
+                    <br>
+                    <form action="index.html" id="details">
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="fullname"> Full Name </span>
+                                <span> : <input type="text" placeholder="Eminem Mishra" id="edit1" class="name">
+                                    <img src="images/edit.png" onclick=editName(1) class="cut">
+                                </span>
+
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="username"> Username </span>
+                                <span> : <input type="text" placeholder="@Eminem " id="edit2" class="name">
+                                    <img src="images/edit.png" onclick=editName(2) class="cut">
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="phone"> Phone</span>
+                                <span>: <input type="text" placeholder="+91 123456789" id="edit3" class="name">
+                                    <img src="images/edit.png" onclick=editName(3) class="cut">
+                                </span>
+
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="email"> Email </span>
+                                <span> : <input type="text" placeholder="eminem@gmail.com" id="edit4" class="mail">
+                                    <img src="images/edit.png" onclick=editName(4) class="cut">
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="web"> Website </span>
+                                <span> : <input type="text" placeholder="www.rapgod.com" id="edit5" class="mail">
+                                    <img src="images/edit.png" onclick=editName(5) class="cut">
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="password"> Password </span>
+                                <span> : <input type="text" placeholder="Change Password" id="edit6" class="name">
+                                    <img src="images/edit.png" onclick=editName(6) class="cut">
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="tagline"> Tagline </span>
+                                <span> : <input type="text" placeholder="Ex. Freelancer" id="edit7" class="tag">
+                                    <img src="images/edit.png" onclick=editName(7) class="cut">
+                                </span>
+
+                            </div>
+                        </div>
+
+
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span class="art"> Artform </span>
+                                <span> : <input type="text" placeholder="Ex. Graphic designer" id="edit8" class="tag">
+                                    <img src="images/edit.png" onclick=editName(8) class="cut">
+                                </span>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <br>
+                        <div class="input-div">
+                            <div class="i">
+                            </div>
+                            <div>
+                                <span> <span class="myself">About me </span></span>
+                                <span> : <input type="text" id="edit9" class="about">
+                                    <img src="images/edit.png" onclick=editName(9) class="rate">
+                                </span>
+
+                                <span>
+                                    <button class="btn">Save</button>
+                                    <button class="btn1">Cancel</button>
+                                </span>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+                <div class="connections">
+                    <p style="font-size: 1.3em; font-weight: bold;">Link your social handles</p>
+                    <br>
+                    <div class="mb-4">
+                        <span style="margin-left: 20px;">
+                            <img src="images/insta@2x.png" style="width: 50px; height: auto;">
+
+                            <span style="margin-left: 15px;"> <input readonly placeholder="@Eminem" class="name">
+                            </span>
+
+                        </span>
+                    </div>
+
+                    <div class="mb-4">
+                        <span style="margin-left: 20px;">
+                            <img src="images/fb@2x.png" style="width: 50px; height: auto;">
+
+                            <span style="margin-left: 15px;"> <input readonly placeholder="@Eminem" class="name">
+                            </span>
+
+                        </span>
+                    </div>
+
+                    <div class="mb-4">
+                        <span style="margin-left: 20px;">
+                            <img src="images/twitter@2x.png" style="width: 50px; height: auto;">
+
+                            <span style="margin-left: 15px;"> <input readonly placeholder="@Eminem" class="name">
+                            </span>
+
+                        </span>
+                    </div>
+
+                    <div class="mb-4">
+                        <span style="margin-left: 20px;">
+                            <img src="images/Youtbe_Icon@2x.png" style="width: 50px; height: auto;">
+
+                            <span style="margin-left: 15px;"> <input readonly placeholder="@Eminem" class="name">
+                            </span>
+
+                        </span>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
