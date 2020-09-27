@@ -9,93 +9,62 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css"
-		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/06b4efea42.js" crossorigin="anonymous"></script>
 	<script>document.getElementsByTagName("html")[0].className += " js";</script>
-
+	<link rel="stylesheet" type="text/css" href="css/styleexplore.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<!-- <script
 		type="text/javascript">document.getElementById("verticalline").style.borderLeft = "thick solid #0000FF";</script> -->
 
-</head>
+	</head>
 
-<body>
+	<body>
+		<!-- Navbar -->
+		<header >
+			<nav class=" navbar navbar-expand-lg navbar-light navbar-fixed" >
+				<a class="navbar-brand" style="	padding: 0 20px 0 4%; " href="#">COMPNAME</a>
 
-	<style>
-		body {
-			width: 100%;
-			overflow-x: hidden;
-            font-family: 'Roboto' , sans-serif;
-		}
-	</style>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 4%">
 
-	<!-- Navbar -->
-	<header>
-		<nav class=" navbar navbar-expand-lg navbar-light navbar-fixed shadow p-3 mb-5 bg-white rounded">
+					<span class="navbar-toggler-icon" ></span>
+				</button>
 
-			<a class="navbar-brand" style="	padding: 0 20px 0 60px; " href="#">COMPNAME</a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link " href="#">Events</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link " href="#">Explore <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Create</a>
+						</li>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<li class="nav-item" >
+							<a class="nav-link cur-nav" href="#" >My Profile</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-				<span class="navbar-toggler-icon"></span>
+
+		<!-- Button for Top events Toggle -->
+
+		<div style="box-shadow: 0 -2px 12px rgba(0,0,0,0.2);">
+			<button onclick="toggle()" type="button" class="btn btn-light btn-lg btn-block btn-updates" id="ads">
+				Updates of Top Events &nbsp;&nbsp;&nbsp;<i class="far fa-caret-square-down dropicon"></i>
 			</button>
+		</div>
 
 
-
-
-			<!-- <div class="shadow-sm p-3 mb-5 bg-white rounded"></div> -->
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link cur-nav" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#servicesec">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#aboutussection">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="login.html">Log In</a>
-					</li>
-					<li class="nav-item"  >
-						<a class="nav-link" href="#">Sign Up</a>
-					</li>
-					<!-- <li class="nav-item" style="padding-right: 40px; ">
-						<img src="icon_svg\user_pic.svg"
-							style="border: 2px solid black;border-radius: 50%; width: 100%; height: 50px; ">
-					</li> -->
-				</ul>
-			</div>
-		</nav>
-	</header>
-
-	<!-- Button for Top events Toggle -->
-
-	<div style="box-shadow: 0 -2px 12px rgba(0,0,0,0.2);">
-		<button onclick="toggle()" type="button" class="btn btn-light btn-lg btn-block" id="ads">
-			Updates of Top Events
-		</button>
-	</div>
-
-
-	<style>
-		@media screen and (min-width: 992px) {
-			#ads {
-				display: none;
-			}
-		}
-
-		@media screen and (max-width: 768px) {
-			#topevents {
-				display: none;
-			}
-		}
-	</style>
-
-	<script>
-		function toggle() {
+		<script>
+			function toggle() {
 			//    console.log("click")
 			var x = document.getElementById("topevents");
 			if (x.style.display == "none") {
@@ -107,15 +76,6 @@
 		}
 	</script>
 
-	<!-- <script>
-		 $(document).ready(function() {
-			 $("#ads").click(function(){
-				 $("#topevents").toggle();
-					 
-			 });
-		 });
-	 </script> -->
-
 	<section>
 		<div class="container-fluid">
 
@@ -124,195 +84,185 @@
 				<!-- Column 1 -->
 
 				<div class="col-lg-3 col-md-3 " id="topevents">
-					<div >
-						<div class="pb-3 mb-3">
-							<div class="container-fluid">
-								<div class="row ">
-									<div class="col-lg-12 col-md-12">
-										<h5 style="color: grey;">Top Events</h5>
-										<div style="font-size: medium;">
-											<p>
-											<div style="color: green;">Artopher Dance:</div> Lorem ipsum dolor sit amet
-											consectetur
-											adipisicing elit. Corrupti sit necessitatibus deserunt excepturi totam,
-											culpa.
-											</p>
 
-											<p>
-											<div style="color: green;">Artopher Dance:</div> Lorem ipsum dolor sit amet
-											consectetur
-											adipisicing elit. Corrupti sit necessitatibus deserunt excepturi totam,
-											culpa.
-											</p>
+					<div class="col-lg-12 col-md-12 row container-fluid pb-3 mb-3" id="topeventlist">
 
-											<p>
-											<div style="color: green;">Artopher Dance:</div> Lorem ipsum dolor sit amet
-											consectetur
-											adipisicing elit. Corrupti sit necessitatibus deserunt excepturi totam,
-											culpa.
-											</p>
-										</div>
+						<h5 style="color: grey;">Top Events</h5>
+						<div style="font-size: 13px;padding-bottom: 20px;">
+							<p>
+								<span class="topeventheads">Artopher Dance:</span> Lorem ipsum dolor sit amet
+								consectetur
+								adipisicing elit. Corrupti sit necessitatibus deserunt excepturi totam,
+								culpa.<br>
+							</p>
 
-									</div>
-								</div>
+							<p>
+								<span class="topeventheads">Artopher Dance:</span> Lorem ipsum dolor sit amet
+								consectetur
+								adipisicing elit. Corrupti sit necessitatibus deserunt excepturi totam,
+								culpa.<br>
+							</p>
 
-							</div>
-						</div>
-
-
-						<!-- ADS Image -->
-
-						<div>
-							<p><img src="images\ADS.svg" class="img-fluid z-depth-4 rounded"></p>
-						</div>
-					</div>
-				</div>
-
-
-
-
-
-
-
-
-
-				<!-- Column 2 -->
-
-
-				<div class="col-lg-6 col-,col-md-3 col-12 pb-2 mb-2">
-					<h3 style="color: grey;">Explore</h3>
-					<div class="mb-4" style="box-shadow: 0 -2px 12px rgba(0,0,0,0.2);">
-						<div class="mb-2">
-							<img src="images\user_pic.svg"
-								style="border: 2px solid black;border-radius: 50%; margin: 15px;" class="mb-2 ml-1">
-							Eminem Mishra
-
-						</div>
-
-						<p>
-							<input type="text" placeholder="Show your work"
-								style="width: 90%; height: 80px; background-color: rgb(223, 219, 219);"
-								class="mb-1 ml-2">
+							<p>
+								<span class="topeventheads">Artopher Dance:</span> Lorem ipsum dolor sit amet
+								consectetur
+								adipisicing elit. Corrupti sit necessitatibus deserunt excepturi totam,
+								culpa.<br>
+							</p>
+							<span class="topeventheads">Artopher Dance:</span> Lorem ipsum dolor sit amet
+							consectetur
+							adipisicing elit. Corrupti sit necessitatibus deserunt excepturi totam,
+							culpa.<br>
 						</p>
-						<div> <img src="images\Instagraam.svg" class="mb-1 ml-3"> Photos/Videos
-						</div>
-					</div>
-
-					<!-- Nested grid in 2 column -->
-
-					<div class="container-fluid" style="box-shadow: 0 -2px 12px rgba(0,0,0,0.2);">
-						<div class="row mb-2 ">
-							<!-- Col 1 -->
-
-							<div class="col-lg-1 col-md-1 col-sm-1 col-1">
-								<img src="images\user_pic.svg"
-									style="border: 1px solid black;border-radius: 50%; margin-left: 2px;" class="mb-4">
-
-							</div>
-
-							<!-- Col 2 -->
-
-							<div class="col-lg-10 col-md-10 col-sm-10 col-10">
-								<div class="ml-2 pl-4 mb-4">
-									<h6 style="font-weight: 100px;">Eminem Mishra </h6>
-									<h6 style="color: grey; font-weight: 50px;">Mon, 4 Sep</h6>
-								</div>
-
-								<div>
-									<p style="color: grey; margin-top:15px;">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa officia minima,
-										quas
-										animi qui iure. Aliquid, aliquam. Vero facere fugit enim sit ad quo dolorem
-										dolor?
-										Odit adipisci quod beatae nostrum architecto explicabo, repellat, voluptatum cum
-
-									</p>
-								</div>
-
-								<div>
-									<img src="images\Img_2@2x.png" class="img-fluid">
-								</div>
-
-
-							</div>
-
-
-
-							<!-- Col 3 -->
-
-							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 ">
-								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical"
-									fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd"
-										d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-								</svg>
-							</div>
-						</div>
-
-
-
 
 					</div>
+
+
+
+					<!-- ADS Image -->
+
+					
 				</div>
-
-				<!-- Column 3 -->
-
-				<div class="col-lg-3 col-,col-md-3 d-none d-lg-block">
-					<div >
-
-						<div class="container-fluid text-center ">
-
-							<div class="row ml-2 " style="padding-right: 2px;">
-
-
-
-
-								<!-- Connections -->
-								<h5 class="ml-5" style="font-weight: 500;color:grey;">Connections</h5>
-								<ul class="list-unstyled" style="size: small">
-									<li style="color:grey; ">
-										<img src="images\user_pic.svg"
-											style="border: 1px solid black;border-radius: 50%; margin: 15px;"
-											class="mb-1 ml-1"> Eminem Mishra
-									</li>
-									<li style="color:grey;">
-										<img src="images\user_pic.svg"
-											style="border: 1px solid black;border-radius: 50%; margin: 15px;"
-											class="mb-1 ml-1"> Eminem Mishra
-									</li>
-									<li style="color:grey;">
-										<img src="images\user_pic.svg"
-											style="border: 1px solid black;border-radius: 50%; margin: 15px;"
-											class="mb-1 ml-1"> Eminem Mishra
-									</li>
-									<li style="color:grey;">
-										<img src="images\user_pic.svg"
-											style="border: 1px solid black;border-radius: 50%; margin: 15px;"
-											class="mb-1 ml-1"> Eminem Mishra
-									</li>
-
-								</ul>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- Main row closed div -->
+				<div>
+					<p><img src="images\ADS.svg" class="img-fluid z-depth-4 rounded"></p>
 				</div>
-
-				<!-- Main container closed div -->
 			</div>
 
 
 
 
-	</section>
 
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+			<!-- Column 2 -->
+
+
+			<div class="col-lg-7 col-md-4 col-12 pb-2 mb-2 column-2">
+				<h3 style="color: grey; margin-bottom: 20px">Explore<br></h3>
+				<div class="postbox " >
+					<div class="mb-2">
+						<img src="images\user_pic.svg"
+						style="border: 2px solid black;border-radius: 50%; margin: 15px;" class="mb-2 ml-1">
+						Eminem Mishra
+
+					</div>
+
+					<p>
+						
+						<textarea name="Text1" placeholder="What do you have in mind? Show Your work?" cols="80" rows="3" class= "postarea" autofocus="autofocus"></textarea>
+					</p>
+					<div> <img src="images\Instagraam.svg" class="mb-1 ml-3"> Photos/Videos
+					</div>
+				</div>
+
+				<!-- Nested grid in 2 column -->
+
+				<div class="container-fluid posts">
+					<div class="row mb-2 ">
+						<!-- Col 1 -->
+
+						<div class="col-lg-1 col-md-1 col-sm-1 col-1">
+							<img src="images\user_pic.svg"
+							style="border: 1px solid black;border-radius: 50%; margin-left: 2px;" class="mb-4">
+
+						</div>
+
+						<!-- Col 2 -->
+
+						<div class="col-lg-10 col-md-10 col-sm-10 col-10">
+							<div class="ml-2  mb-4">
+								<h6 style="font-weight: 100px;">Eminem Mishra </h6>
+								<h6 style="color: grey; font-weight: 50px;">Mon, 4 Sep</h6>
+							</div>
+
+							<div>
+								<p style="color: grey; margin-top:15px;">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa officia minima,
+									quas
+									animi qui iure. Aliquid, aliquam. Vero facere fugit enim sit ad quo dolorem
+									dolor?
+									Odit adipisci quod beatae nostrum architecto explicabo, repellat, voluptatum cum
+
+								</p>
+							</div>
+
+							<div>
+								<img src="images\Img_2@2x.png" class="img-fluid">
+							</div>
+
+
+						</div>
+
+
+
+						<!-- Col 3 -->
+
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 ">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical"
+							fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+						</svg>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+		<!-- Column 3 -->
+
+		<div class="col-lg-2 col-md-2 d-none d-lg-block connectionpad">
+
+			<div class="row text-center" style=" align-content: center;">
+
+				<!-- Connections -->
+				<h5 class="connectionpad" style="font-weight: 500;color:grey;">Connections</h5>
+				<ul class="list-unstyled" style="size: small">
+					<li style="color:grey; vertical-align: middle;">
+						<img src="images\user_pic.svg"
+						style="border: 1px solid black;border-radius: 50%; margin: 15px;margin-left: 0px;margin-bottom: 0px"
+						> <span>Eminem Mishra</span>
+					</li>
+					<li style="color:grey;">
+						<img src="images\user_pic.svg"
+						style="border: 1px solid black;border-radius: 50%; margin: 15px;margin-left: 0px;"
+						class="mb-1 ml-1"> Eminem Mishra
+					</li>
+					<li style="color:grey;">
+						<img src="images\user_pic.svg"
+						style="border: 1px solid black;border-radius: 50%; margin: 15px;margin-left: 0px;"
+						class="mb-1 ml-1"> Eminem Mishra
+					</li>
+					<li style="color:grey;">
+						<img src="images\user_pic.svg"
+						style="border: 1px solid black;border-radius: 50%; margin: 15px;margin-left: 0px;"
+						class="mb-1 ml-1"> Eminem Mishra
+					</li>
+
+				</ul>
+			</div>
+
+			<!-- Main row closed div -->
+		</div>
+
+		<!-- Main container closed div -->
+	</div>
+
+
+
+
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </body>
 
